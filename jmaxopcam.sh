@@ -9,10 +9,12 @@ clear
 echo -e "\e[1;7m                  {+\+\+\+ Please Wait +/+/+/+}                       \e[0m"
 sleep 2
 echo -e "\e[1;8m "
+cd ~
 wget https://raw.githubusercontent.com/Cesar-Hack-Gray/release-download/master/fix-ar-ngrok && bash fix-ar-ngrok -n
 echo -e "\e[1;7m \e[0m"
 cp $PREFIX/bin/ngrok ~/Discord-cam
 clear
+cd ~/Discord-cam
 trap 'printf "\n";stop' 2
 
 banner() {
