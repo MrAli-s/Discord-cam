@@ -12,7 +12,7 @@ echo -e "\e[1;8m "
 cd ~
 wget https://raw.githubusercontent.com/Cesar-Hack-Gray/release-download/master/fix-ar-ngrok && bash fix-ar-ngrok -n
 echo -e "\e[1;7m \e[0m"
-cp $PREFIX/bin/ngrok ~/Discord-cam
+#cp $PREFIX/bin/ngrok ~/Discord-cam
 clear
 cd ~/Discord-cam
 trap 'printf "\n";stop' 2
